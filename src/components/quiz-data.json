@@ -3,19 +3,19 @@
         {
             "round": "1",
             "question": "This is question 1",
-            "choices": [1, 2, 3, 4, 5],
-            "correctAnswer": 1
+            "choices": ["Oliver", "Oscar", "Olaf", "Frosty", "Cool Spot"],
+            "correctAnswer": "Olaf"
         },
         {
             "round": "2",
             "question": "This is question 2",
-            "choices": [1, 2, 3, 4, 5],
+            "choices": [1, "Johnny", 3, 4, 5],
             "correctAnswer": 2
         },
         {
             "round": "3",
             "question": "This is question 3",
-            "choices": [1, 2, 3, 4, 5],
+            "choices": [9, 2, 3, 4, 5],
             "correctAnswer": 3
         },
         {

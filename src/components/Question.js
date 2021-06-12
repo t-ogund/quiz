@@ -2,7 +2,7 @@ import React from "react";
 
 function Question() {
     return(
-        <h3>This is a question component</h3>
+        <h3>In Frozen, what's the name of the Snowman?</h3>
     )
 }
 

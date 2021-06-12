@@ -27,5 +27,19 @@
     align-items: center;
     height: 80%;
     width: 100%;
+}
+
+.choice-button {
+    width: 100%;
+    height: 20%;
     background-color: lightgreen;
+    border: 1px solid black;
+}
+
+.choice-button:hover {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(71, 194, 71);
+    border: 1px solid black;
+    cursor: pointer;
 }
