@@ -2,7 +2,7 @@
     "quizData": [
         {
             "round": "1",
-            "question": "This is question 1",
+            "question": "What was the snowman's name in Frozen?",
             "choices": ["Oliver", "Oscar", "Olaf", "Frosty", "Cool Spot"],
             "correctAnswer": "Olaf"
         },

@@ -1,50 +1,58 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Question from "./Question";
 import Answer from "./Answer";
 import quizData from "./quiz-data.json";
 
 
 function Quiz() {
-    // console.log(quizData.quizData)
-    // const answerArray = quizData.quizData.map((dp, x) => {
-    //     // return <p>{dp.answer}</p>
-    //     console.log(dp.choices)
-    //     console.log(`${dp.choices[x]} is an answer option`)
-    //     return <p>{dp.choices[0]} is the correct answer.</p>
-    // })
-    console.log("Quiz Data: ", quizData.quizData)
+    let [questionNumber, setQuestionNumber] = useState(0)
+    console.log("quizData: ", quizData)
+    console.log("quizData.quizData: ", quizData.quizData)
 
-    
-
-    const firstChoices = quizData.quizData[0].choices.map(choice => {
-
-        function handleClick(e) {
-            console.log(e.target.textContent)
-            if (e.target.textContent === quizData.quizData[0].correctAnswer) {
-                console.log("CORRECT!")
-            } else {
-                console.log("Try again...")
-            }
+    function handleQ1(e) {
+        if (e.target.textContent === quizData.quizData[0].correctAnswer) {
+            console.log("CORRECT!")
+            setQuestionNumber(questionNumber += 1)
+            console.log(questionNumber)
+        } else {
+            console.log("Try again...")
         }
+    }
 
-        return(
-            <button onClick={handleClick} className={`choice-button`}>{choice}</button>
-        )
+    function handleQ2(e) {
+        if (e.target.textContent === "Olaf") {
+            console.log("CORRECT!")
+            questionNumber += 1;
+            console.log(questionNumber)
+        } else {
+            console.log("Try again...")
+        }
+    }
+
+    const roundOneQs = quizData.quizData[0].choices.map((choice, x) => {
+        return <button onClick={handleQ1} className={`choice-button`}>{choice}</button>
+        console.log("Choices: ", choice)
     })
+
+    const roundTwoQs = quizData.quizData[1].choices.map((choice, x) => {
+        return <button onClick={handleQ2} className={`choice-button`}>{choice}</button>
+        console.log("Choices: ", choice)
+    })
+
+   
     
-
-
-    return(
-        <div className={`Quiz`}>
-            <div className={`question-section`}>
-                <Question />
-            {/* {questionArray} */}
+        return(
+            <div className={`Quiz`}>
+                <div className={`question-section`}>
+                    {questionNumber === 0 ? quizData.quizData[0].question : quizData.quizData[1].question}
+                </div>
+                <div className={`answer-section`}>
+                    {questionNumber === 0 ? roundOneQs : roundTwoQs}
+                </div>
             </div>
-            <div className={`answer-section`}>
-                {firstChoices}
-            </div>
-        </div>
-    )
+        )
+    
+    
 }
 
 export default Quiz
