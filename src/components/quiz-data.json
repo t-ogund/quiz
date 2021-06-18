@@ -2,33 +2,33 @@
     "quizData": [
         {
             "round": "1",
-            "question": "What was the snowman's name in Frozen?",
+            "question": "What was the snowman's name in Frozen? ",
             "choices": ["Oliver", "Oscar", "Olaf", "Frosty", "Cool Spot"],
             "correctAnswer": "Olaf"
         },
         {
             "round": "2",
-            "question": "This is question 2",
-            "choices": [1, "Johnny", 3, 4, 5],
-            "correctAnswer": 2
+            "question": "What is Anna's sister's name?",
+            "choices": ["Stephanie", "Wanda", "Rebecca", "Penelope", "Elsa"],
+            "correctAnswer": "Elsa"
         },
         {
             "round": "3",
-            "question": "This is question 3",
-            "choices": [9, 2, 3, 4, 5],
-            "correctAnswer": 3
+            "question": "What is the name of the animal with antlers?",
+            "choices": ["Sven", "Rudolph", "Blitzen", "Sleepy", "Dodger"],
+            "correctAnswer": "Sven"
         },
         {
             "round": "4",
-            "question": "This is question 4",
-            "choices": [1, 2, 3, 4, 5],
-            "correctAnswer": 4
+            "question": "Who owns the animal with antlers?",
+            "choices": ["Anna", "Elsa", "Olaf", "Hans", "Kristoff"],
+            "correctAnswer": "Kristoff"
         },
         {
             "round": "5",
-            "question": "This is question 5",
-            "choices": [1, 2, 3, 4, 5],
-            "correctAnswer": 5
+            "question": "Who is the Queen of Arendelle?",
+            "choices": ["Queen Iduna", "Oaken", "Pabbie", "Anna", "King Agnarr"],
+            "correctAnswer": "Anna"
         }
     ]
 }

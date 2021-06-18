@@ -43,3 +43,12 @@
     border: 1px solid black;
     cursor: pointer;
 }
+
+.Results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+}
